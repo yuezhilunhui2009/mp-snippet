@@ -1,0 +1,49 @@
+{
+  "pages": [
+    "index/index",
+    "detail/detail"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#222",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "微信小程序 demo",
+    "navigationStyle": "default",
+    "backgroundColor": "#ddd",
+    "backgroundTextStyle": "light",
+    "backgroundColorTop": "#fff",
+    "backgroundColorBottom": "#fff",
+    "enablePullDownRefresh": false,
+    "onReachBottomDistance": 50
+  },
+  "tabBar": {
+    "color": "#888",
+    "selectedColor": "#34ff34",
+    "backgroundColor": "#222",
+    "borderStyle": "black",
+    "position": "top",
+    "list": [
+      {
+        "pagePath": "index/index",
+        "text": "TAB-1"
+      },
+      {
+        "pagePath": "detail/detail",
+        "text": "TAB-2"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 60000,
+    "connectSocket": 60000,
+    "uploadFile": 60000,
+    "downloadFile": 60000
+  },
+  "debug": true,
+  "functionalPages": false,
+  "subPackages": [],
+  "workers": "",
+  "requiredBackgroundModes": [],
+  "plugins": {},
+  "preloadRule": {},
+  "resizable": false
+}
