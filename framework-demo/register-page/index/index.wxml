@@ -1,1 +1,31 @@
-<view class="intro">欢迎使用代码片段，可在控制台查看代码片段的说明和文档</view>
+<view>
+    <text>Page.data 字段展示</text>
+</view>
+<view>
+    <text>typeString: {{typeString}}</text>
+</view>
+<view>
+    <text>typeNumber: {{typeNumber}}</text>
+</view>
+<view>
+    <text>typeBoolean: {{typeBoolean}}</text>
+</view>
+<view>
+    <text>typeObject: {{typeObject}}</text>
+</view>
+<view>
+    <text>typeArray: {{typeArray}}</text>
+</view>
+<view>
+    <text>typeStringArray: {{typeStringArray}}</text>
+</view>
+<view>
+    <text>typeObjectArray: {{typeObjectArray}}</text>
+</view>
+<view>
+    <text>typeFunction: {{typeFunction}}</text>
+</view>
+<view class="something"></view>
+<view class="something"></view>
+<view class="something"></view>
+<view class="something"></view>

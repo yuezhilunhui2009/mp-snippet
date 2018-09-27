@@ -1,11 +1,59 @@
 const app = getApp()
+console.log(`==index.js== getApp()`, app)
 
 Page({
   data: {
-
+    typeString: '字符串类型字段',
+    typeNumber: 12345678,
+    typeBoolean: true,
+    typeObject: {
+      k1: 'v1',
+      k2: 'v2'
+    },
+    typeArray: [1, 2, 3],
+    typeStringArray: ['1', '2', '3'],
+    typeObjectArray: [
+      { k1: 'v1' },
+      { k2: 'v2' }
+    ],
+    // 无效字段
+    typeFunction () {
+      console.log('Page.data.typeFunction')
+    }
   },
-  onLoad: function () {
-    console.log('代码片段是一种迷你、可分享的小程序或小游戏项目，可用于分享小程序和小游戏的开发经验、展示组件和 API 的使用、复现开发问题和 Bug 等。可点击以下链接查看代码片段的详细文档：')
-    console.log('https://mp.weixin.qq.com/debug/wxadoc/dev/devtools/devtools.html')
+  onLoad (query) {
+    console.log(`==index.js== [生命周期] Page.onLoad(${JSON.stringify(query, null, 4)})`, `page:`, this, `app:`, app)
+  },
+  onShow () {
+    console.log(`==index.js== [生命周期] Page.onShow()`, `page:`, this, `app:`, app)
+  },
+  onReady () {
+    console.log(`==index.js== [生命周期] Page.onReady()`, `page:`, this, `app:`, app)
+  },
+  onHide () {
+    console.log(`==index.js== [生命周期] Page.onHide()`, `page:`, this, `app:`, app)
+  },
+  onUnload () {
+    console.log(`==index.js== [生命周期] Page.onUnload()`, `page:`, this, `app:`, app)
+  },
+  onPullDownRefresh () {
+    console.log(`==index.js== [事件] Page.onPullDownRefresh()`, `page:`, this, `app:`, app)
+  },
+  onReachBottom () {
+    console.log(`==index.js== [事件] Page.onReachBottom()`, `page:`, this, `app:`, app)
+  },
+  onPageScroll (e) {
+    console.log(`==index.js== [事件] Page.onPageScroll(${JSON.stringify(e, null, 4)})`, `page:`, this, `app:`, app)
+  },
+  onShareAppMessage (e) {
+    console.log(`==index.js== [事件] Page.onShareAppMessage(${JSON.stringify(e, null, 4)})`, `page:`, this, `app:`, app)
+    return {
+      title: '小程序 register-page demo',
+      path: '/index/index'
+      // imageUrl: (默认值：使用默认截图)
+    }
+  },
+  onTabItemTap (e) {
+    console.log(`==index.js== [事件] Page.onTabItemTap(${JSON.stringify(e, null, 4)})`, `page:`, this, `app:`, app)
   },
 })

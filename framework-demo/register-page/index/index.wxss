@@ -2,3 +2,11 @@
   margin: 30px;
   text-align: center;
 }
+
+.something {
+  width: 400rpx;
+  height: 400rpx;
+  margin: 20rpx;
+  border: solid 1rpx #333;
+  background: rgb(0, 156, 167);
+}
