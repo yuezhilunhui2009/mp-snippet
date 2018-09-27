@@ -1,0 +1,10 @@
+{
+    "navigationBarBackgroundColor": "#ECF9F8",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "微信小程序 demo",
+    "backgroundColor": "#3670A1",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": true,
+    "onReachBottomDistance": 100,
+    "disableScroll": false
+}
