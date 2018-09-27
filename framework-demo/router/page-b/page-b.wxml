@@ -1,0 +1,28 @@
+<!--page-b/page-b.wxml-->
+<view>
+    <text>当前页：/page-b/page-b</text>
+</view>
+
+<view class="btn-area">
+    <navigator url="/page-c/page-c" hover-class="navigator-hover">
+        跳转到 /page-c/page-c
+    </navigator>
+    <navigator url="/page-d/page-d" hover-class="navigator-hover">
+        跳转到 /page-d/page-d
+    </navigator>
+    <navigator url="/page-c/page-c" open-type="redirect" hover-class="other-navigator-hover">
+        在当前页打开 /page-c/page-c
+    </navigator>
+    <navigator url="/page-d/page-d" open-type="redirect" hover-class="other-navigator-hover">
+        在当前页打开 /page-d/page-d
+    </navigator>
+    <navigator url="/page-a/page-a" open-type="switchTab" hover-class="other-navigator-hover">
+        切换 Tab
+    </navigator>
+    <navigator url="" open-type="navigateBack" hover-class="navigator-hover">返回 </navigator>
+    <navigator url="/page-a/page-a" open-type="reLaunch" hover-class="navigator-hover">重启到 /page-a/page-a</navigator>
+    <navigator url="/page-b/page-b" open-type="reLaunch" hover-class="navigator-hover">重启到 /page-b/page-b</navigator>
+    <navigator url="/page-c/page-c" open-type="reLaunch" hover-class="navigator-hover">重启到 /page-c/page-c</navigator>
+    <navigator url="/page-d/page-d" open-type="reLaunch" hover-class="navigator-hover">重启到 /page-d/page-d</navigator>
+    <navigator url="" open-type="exit" target="miniProgram" hover-class="navigator-hover">退出</navigator>
+</view>
